@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Prompt:ital,wght@1,300;1,400&family=Signika+Negative:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', Courier, monospace
+        
+}
+
+/*clases de colores*/
+.colorWhite {
+    color: white
+}
+
+.colorGrey {
+    color: rgb(190, 191, 193)
+}
+
+.colorVerde {
+    color: rgb(52, 133, 52)
+}
+
+
+
+.colorCeleste {
+    background-color: rgb(25, 166, 218);
+    color: white;
+}
+
+.colorAmarillo {
+    background-color: rgb(237, 204, 18);
+}
+
+.colorGris {
+    background-color: rgb(53, 58, 64);
+    color: white;
+}
+
+.colorRojo {
+    background-color: red;
+    color: white;
+}
+
+.colorDeFondoVerde {
+    background-color: rgb(157, 207, 52);
+}
+
+.colorTransparente {
+
+    background-color: transparent;
+}
+
+/* nav   */
+
+
+.logoNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(53, 58, 64);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.logoyTitle {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    .logoCaC {
+        height: 10vh;
+        width: auto;
+        padding-bottom: 5px;
+    }
+}
+
+
+
+.listaHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: space-evenly;
+    align-items: normal;
+
+    .linkNav {
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+
+/* main*/
+
+.conferencia {
+    border-top: 750px;
+    height: 100vh;
+    align-items: end;
+    background-image: url(../assets/ba1.jpg); 
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.conferencia::before {
+    border-top: 750px;
+    height: 100vh;
+    align-items: end;
+    content: "";
+   position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  
+    opacity: 1; 
+    pointer-events: none; 
+    }
+
+.conferencia .conf {
+    position: relative; 
+    z-index: 1;
+}
+
+.conf {
+    height: 50%;
+    width: 50%;
+    margin-right: 100px;
+
+}
+
+.conf h1 {
+    text-align: end;
+}
+
+.conf p {
+    margin: 25px 25px 25px 0px;
+}
+
+.conf a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.oradores {
+    height: 100vh;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.oradores h2 {
+    font-size: 0.75rem;
+    padding-top: 20px;
+
+    .letraGrande {
+        font-size: 1.5rem;
+    }
+}
+
+.tarjeta {
+
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    /* bordeado de los bloques*/
+    width: 30%;
+    height: 80%;
+    display: inline-block;
+    /* se alinean los bloques*/
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cuerpoTarjeta {
+    margin: 10px;
+}
+
+.cuerpoTarjeta h4 {
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 2px 7px;
+}
+
+.tituloNom {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+.lugarFecha {
+    display: flex;
+
+}
+
+.lugarFecha img {
+    height: 50vh;
+    width: 500vh;
+
+}
+
+
+.lugarFecha__texto {
+    background-color: rgb(63, 62, 62);
+    padding: 20px;
+
+}
+
+.lugarFecha__texto a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.formularioOrador {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    width: 750px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+form .boton {
+    width: 100%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 6px;
+    font-size: x-large;
+}
+
+.nombres {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+
+    #name {
+        width: 48%
+    }
+
+    #apellido {
+        width: 48%
+    }
+}
+
+#comentario {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.comentarioYboton {
+    width: 100%;
+
+}
+
+
+
+
+
+.formularioOrador h2 {
+    font-size: 0.75rem;
+    padding-top: 20px;
+
+    .letraGrande {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* footer*/
+.footer {
+    height: 150px;
+    background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .linkFooter {
+        text-decoration: none;
+
+    }
+
+}
+
+/* MOBILE*/
+
+@media screen and (max-width:650px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open sans', Courier, monospace
+            /* reseteo de algunas propiedades*/
+    }
+
+    /*clases utilitarias*/
+    .colorWhite {
+        color: white
+    }
+
+    .colorGrey {
+        color: rgb(190, 191, 193)
+    }
+
+    .colorVerde {
+        color: rgb(52, 133, 52)
+    }
+
+
+
+    .colorCeleste {
+        background-color: rgb(25, 166, 218);
+        color: white;
+    }
+
+    .colorAmarillo {
+        background-color: rgb(237, 204, 18);
+    }
+
+    .colorGris {
+        background-color: rgb(53, 58, 64);
+        color: white;
+    }
+
+    .colorRojo {
+        background-color: red;
+        color: white;
+    }
+
+    .colorDeFondoVerde {
+        background-color: rgb(157, 207, 52);
+    }
+
+    .colorTransparente {
+
+        background-color: transparent;
+    }
+
+    /* nav   */
+
+
+    .logoNav {
+        position: fixed;
+        top: 0;
+        width: 25%;
+        background-color: rgb(53, 58, 64);
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .logoyTitle {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .logoCaC {
+            height: 10vh;
+            width: auto;
+            padding-bottom: 5px;
+        }
+    }
+
+
+
+    .listaHeader {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .linkNav {
+            text-decoration: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+
+
+    /* main*/
+
+    .conferencia {
+    
+        background-image: url('../assets/ba1.jpg') linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
+        background-size: cover;
+        background-position: center;
+        color: #fff; /* Color de texto blanco para el contenido */
+        padding: 40px; /* Añade espaciado interno */
+        text-align: center;
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .conferencia::before {
+        border-top: 750px;
+        height: 100vh;
+        align-items: end;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Capa semitransparente negra */
+        opacity: 1; /* Ajusta la opacidad según el nivel de oscurecimiento deseado */
+        pointer-events: none; /* Permite que los eventos pasen a través de la capa */
+    }
+    
+    .conferencia .conf {
+        position: relative; /* Para que el contenido esté por encima de la capa semitransparente */
+        z-index: 1; /* Coloca el contenido por encima de la capa semitransparente */
+    }
+    
+    .conf {
+        height: 50%;
+        width: 50%;
+        margin-right: 100px;
+        
+    }
+    .conf a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .conf h1 {
+        text-align: center;
+    }
+    
+    .conf p {
+        margin:0px;
+        height:90%;
+        text-align: center;
+    }
+    .conferencia a:hover {
+        background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor por encima */
+    }
+    .botones{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5vh;
+        
+    }
+    /*
+    .conferencia {
+        border-top: 750px;
+        height: 100vh;
+        align-items: end;
+        background-image: url(../assets/ba1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        
+    }
+    
+    .conf {
+        height: 50%;
+        width: 50%;
+        margin-right: 100px;
+        
+    }
+    
+    .conf h1 {
+        text-align: center;
+    }
+    
+    .conf p {
+        margin:0px;
+        height:90%;
+        text-align: center;
+    }
+    
+    .conf a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    Ajusta el tamaño de la imagen al contenedor */
+    
+    
+    .oradores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: auto;
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .oradores h2 {
+        font-size: 0.75rem;
+        padding-top: 20px;
+
+        .letraGrande {
+            font-size: 1.5rem;
+        }
+    }
+
+    .tarjeta {
+
+        background-color: white;
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 5px;
+        /* bordeado de los bloques*/
+        width: 60%;
+        height: 80%;
+        display: inline-block;
+        /* se alinean los bloques*/
+        margin-right: 20px;
+        margin-top: 20px;
+        text-align: left;
+
+    }
+
+    .tarjeta img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .cuerpoTarjeta {
+        margin: 10px;
+    }
+
+    .cuerpoTarjeta h4 {
+        display: inline-block;
+        border-radius: 5px;
+        margin-right: 5px;
+        padding: 2px 7px;
+    }
+
+    .tituloNom {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+
+    .lugarFecha {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: normal;
+        align-items: normal;
+
+    }
+
+    .lugarFecha .img {
+        height:50vh;
+        width: 200vh;
+        display: none;
+
+    }
+
+    .lugarFecha__texto {
+        background-color: url rgb(63, 62, 62);
+        padding: 20px;
+
+    }
+
+    .lugarFecha__texto a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .formularioOrador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px;
+        padding: 0;
+        height: 100vh;
+
+    }
+
+    form {
+        width: 600px;
+        height: auto;
+
+        padding: 20px;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    form .boton {
+        width: 100%;
+        height: 40px;
+        margin: 100px;
+        border-radius: 6px;
+        font-size: x-large;
+    }
+
+    .nombres {
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+        justify-content: space-between;
+
+        #name {
+            width: 48%
+        }
+
+        #apellido {
+            width: 48%
+        }
+    }
+
+    #comentario {
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .comentarioYboton {
+        width: 100%;
+
+    }
+
+    .formularioOrador h2 {
+        font-size: 0.75rem;
+        padding-top: 20px;
+
+        .letraGrande {
+            font-size: 1.5rem;
+        }
+    }
+
+
+    /* footer*/
+    .footer {
+        font-size: large;
+        height: 250px;
+        background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .linkFooter {
+            text-decoration: none;
+
+        }
+
+    }
+}
