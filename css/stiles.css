@@ -126,7 +126,7 @@
     height: 100vh;
     align-items: end;
     content: "";
-   position:absolute;
+   /*position:absolute;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -137,7 +137,7 @@
     }
 
 .conferencia .conf {
-    position: relative; 
+   /* position: relative; */
     z-index: 1;
 }
 
@@ -176,13 +176,21 @@
 
 }
 
-.oradores h2 {
+.cuerpoTarjeta h2 {
     font-size: 0.75rem;
     padding-top: 20px;
 
+}
     .letraGrande {
         font-size: 1.5rem;
     }
+.cardTicket{
+    margin-top:100px;
+    margin-bottom: 10px;
+    display:flex;
+    width:75%;
+    height:80%
+
 }
 
 .tarjeta {
@@ -192,7 +200,7 @@
     border-radius: 5px;
     /* bordeado de los bloques*/
     width: 30%;
-    height: 80%;
+    height: 70%;
     display: inline-block;
     /* se alinean los bloques*/
     margin-right: 20px;
@@ -200,6 +208,34 @@
     text-align: left;
 
 }
+.tickets{
+    height:80%;
+    width:80%;
+}
+.bordeCeleste{
+   border:2px solid #0fbfcf;
+   text-decoration: none; 
+   transition: background-color 0.5s;
+}
+.bordeCeleste:hover{
+    background-color: #94c4f6;
+}
+
+.bordeAmarillo{
+    border:2px solid #f2ca06;
+    text-decoration: none; 
+    transition: background-color 0.5s;
+}  
+.bordeAmarillo:hover{
+    background-color: #e5f47e;
+} 
+.cuerpoTickets{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s
+}
+
 
 .tarjeta img {
     width: 100%;
@@ -262,6 +298,20 @@
     align-items: center;
 
 }
+.formularioTicket {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.formularioTicket h2{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+    align-items: center
+}
 
 form {
     width: 750px;
@@ -276,7 +326,7 @@ form {
 form .boton {
     width: 100%;
     height: 40px;
-    margin: 20px;
+    margin: 5px 10px 5px 0px;
     border-radius: 6px;
     font-size: x-large;
 }
@@ -296,22 +346,74 @@ form .boton {
         width: 48%
     }
 }
+.cantCate {
+    width: 100%;
+  
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+    
+}
+.cantidad  {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+.totalAPagar{
+    background-color: #0fbfcf;
+    width:95%;
+    border:1px solid #0750bd;
+    padding:2px;
+    border-radius: 2px;   
+}
+.totalAPagar p{color:#151d2c}
+
+
+
+.categoria {
+    display:flex;
+    flex-direction: column;
+    width: 100%
+}
+#cantidad{
+    width:95%
+}
+
 
 #comentario {
     width: 100%;
     height: 100%;
 }
+.correo {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+#correo{
+    width: 100%;
+
+}
+
 
 p {
     width: 100%;
     padding-bottom: 10px;
 }
 
+
 .comentarioYboton {
     width: 100%;
 
 }
-
+.subtitulo{
+    margin-bottom: 0%;
+    padding: 10px;
+    }
+.botones{
+    display:flex;
+    width:100%;
+}
 
 
 
@@ -584,12 +686,13 @@ p {
 
     }
 
-    .oradores h2 {
+    .cuerpoTarjeta h4 {
         font-size: 0.75rem;
         padding-top: 20px;
 
         .letraGrande {
             font-size: 1.5rem;
+            font-weight: bold;
         }
     }
 
